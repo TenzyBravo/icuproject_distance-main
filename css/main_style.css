@@ -28,6 +28,8 @@ h1{
 body{
     font-family: myFirstFont,Verdana, Geneva, Tahoma, sans-serif;
     cursor:default;
+    background: #44cef8;
+    background-color:;
 }
 
     /* Website Scrollerbar */
@@ -143,6 +145,8 @@ nav img{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    background-color: #0f4e79;
+    padding: 80px 100px;
 }
 h1{
     font-size: 36px;
@@ -162,7 +166,7 @@ p{
 }
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #44cef8;
     border-radius: 10px;
     margin-bottom:5%;
     padding: 20px 12px;
