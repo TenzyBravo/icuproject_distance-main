@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ICU Zambia</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="css/contact_style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png" id="logo-img" alt="ICU Logo"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <button class="icon" onclick="hidemenu()" aria-label="Close menu">&#10005;</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Admission_page.html">Admission</a></li>
+                    <li><a href="index.html#course_call">Course</a></li>
+                    <li><a href="fees_page.html">Fees</a></li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                </ul>
+            </div> 
+            <button class="icon" onclick="showmenu()" aria-label="Open menu">&#9776;</button>
+        </nav>
+        <div class="wrapper">
+            <div class="r_form_wrap">
+                <div class="title">
+                    <h2>Contact Form</h2>
+                </div>
+                
+                <!-- Contact form -->
+                <div class="r_form">
+                    <form method="post" id="contactForm" onsubmit="sendmail(); reset(); return false;">
+                        <div class="input_wrap">
+                            <label for="yourname">Your Name</label>
+                            <div class="input_item">
+                                <i class="fa fa-user" id="icon" aria-hidden="true"></i>
+                                <input type="text" name="yourname" class="input" id="yourname" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="emailaddress">Email Address</label>
+                            <div class="input_item">
+                                <i class="fa fa-envelope" id="icon" aria-hidden="true"></i>
+                                <input type="email" name="emailaddress" class="input" id="emailaddress" placeholder="Enter your Email ID" required>
+                            </div>
+                        </div>
+
+                        <div class="input_wrap">
+                            <label for="message">Message</label>
+                            <div class="input_item">
+                                <i class="fa fa-commenting" id="icon" aria-hidden="true"></i>
+                                <textarea name="message" class="mess" id="message" placeholder="Write your message..." rows="5"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="button-group">
+                            <input type="submit" class="button" value="Send Message">
+                            <input type="reset" class="clear_ad" value="Clear">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="none_div"></div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendmail() {
+            // Here you would normally configure the Email.send parameters
+            // This is just a placeholder that shows a success message
+            Email.send({}).then(
+                message => alert("Your Message Is Successful - Team ICU Zambia")
+            );
+        }
+        
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }   
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
