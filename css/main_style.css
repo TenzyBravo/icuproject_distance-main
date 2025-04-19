@@ -28,8 +28,8 @@ h1{
 body{
     font-family: myFirstFont,Verdana, Geneva, Tahoma, sans-serif;
     cursor:default;
-    background: #44cef8;
-    background-color:;
+    background: #4790a7;
+    background-color: #4790a7;
 }
 
     /* Website Scrollerbar */
@@ -299,9 +299,8 @@ h3{
     padding: 100px 0;
     box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.664);
 }
-.ctn{
-    
-}
+/* Removed invalid selector {.some-class */
+
 
 /* Footer */
 
