@@ -14,7 +14,6 @@
     <header class="header">
         <nav>
             <a href="index.html"><img src="image/logo.png" id="logo-img" alt="ICU Logo"></a>
-            
             <div class="nav-links" id="navLinks">
                 <button class="icon" onclick="hidemenu()" aria-label="Close menu">&#10005;</button>
                 <ul>
@@ -27,38 +26,57 @@
             </div> 
             <button class="icon" onclick="showmenu()" aria-label="Open menu">&#9776;</button>
         </nav>
+
+        <!-- Contact Form Section -->
         <div class="wrapper">
             <div class="r_form_wrap">
                 <div class="title">
                     <h2>Contact Form</h2>
                 </div>
-                
-                <!-- Contact form -->
                 <div class="r_form">
                     <form method="post" id="contactForm" onsubmit="sendmail(); reset(); return false;">
+                        <!-- Contact Information Section within the Form -->
+                        <div class="contact-info">
+                            <h3>Our Contact Information</h3>
+                            <p><strong>Campus Address:</strong><br>
+                                ICU Main Campus, Off Shantumbu Road, Kafue<br>
+                                Plot #19877/M/1A/392<br>
+                                P.O. Box 30226, Cairo Road, Lusaka, Zambia
+                            </p>
+                            <p><strong>General Inquiries:</strong><br>
+                                Phone: +260 970 582 358 / +260 965 168 729 / +260 978 876 870<br>
+                                Email: <a href="mailto:icu@icuzambia.net">icu@icuzambia.net</a>
+                            </p>
+                            <p><strong>Registration:</strong> +260 970 406 960 / +260 971 770 875</p>
+                            <p><strong>Courses:</strong> +260 979 328 041 / +260 977 450 151</p>
+                            <p><strong>ZRDC Sponsorship:</strong> +260 971 177 346 / +260 979 303 567</p>
+                            <p><strong>Exams:</strong> +260 974 202 170 / +260 977 431 107</p>
+                            <p><strong>ICU TV:</strong> +260 979 314 158</p>
+                            <p><a href="https://www.icuzambia.net" target="_blank">Visit our Website</a></p>
+                        </div> <br><br><br><br><br>
+
+                        <!-- Form Fields -->
                         <div class="input_wrap">
                             <label for="yourname">Your Name</label>
                             <div class="input_item">
-                                <i class="fa fa-user" id="icon" aria-hidden="true"></i>
+                                <i class="fa fa-user" aria-hidden="true"></i>
                                 <input type="text" name="yourname" class="input" id="yourname" placeholder="Enter your name" required>
                             </div>
                         </div>
                         <div class="input_wrap">
                             <label for="emailaddress">Email Address</label>
                             <div class="input_item">
-                                <i class="fa fa-envelope" id="icon" aria-hidden="true"></i>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
                                 <input type="email" name="emailaddress" class="input" id="emailaddress" placeholder="Enter your Email ID" required>
                             </div>
                         </div>
-
                         <div class="input_wrap">
                             <label for="message">Message</label>
                             <div class="input_item">
-                                <i class="fa fa-commenting" id="icon" aria-hidden="true"></i>
+                                <i class="fa fa-commenting" aria-hidden="true"></i>
                                 <textarea name="message" class="mess" id="message" placeholder="Write your message..." rows="5"></textarea>
                             </div>
                         </div>
-                        
                         <div class="button-group">
                             <input type="submit" class="button" value="Send Message">
                             <input type="reset" class="clear_ad" value="Clear">
@@ -70,22 +88,21 @@
     </header>
 
     <div class="none_div"></div>
-    
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendmail() {
-            // Here you would normally configure the Email.send parameters
-            // This is just a placeholder that shows a success message
             Email.send({}).then(
                 message => alert("Your Message Is Successful - Team ICU Zambia")
             );
         }
-        
+
         var navLinks = document.getElementById("navLinks");
 
         function showmenu() {
             navLinks.style.right = "0";
-        }   
+        }
+
         function hidemenu() {
             navLinks.style.right = "-200px";
         }
