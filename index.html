@@ -8,15 +8,28 @@
     <meta name="author" content="Jaydipsinh Solanki">
 
     <title>INFORMATION COMMUNICATIONS UNIVERSITY</title>
-    
+
     <link rel="stylesheet" href="css/main_style.css">
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="shortcut icon" href="image/log.jpeg" type="image/x-icon">
+
+    <style>
+        header {
+            background-image: url('image/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <noscript>
+        <p>This site requires JavaScript to function properly. Please enable JavaScript in your browser.</p>
+    </noscript>
+
     <header class="header">
         <nav>
-            <a href="index.html"><img src="image/logo.png" id="logo-img" alt="ICU Logo"></a>
+            <a href="index.html"><img src="image/logo.png" id="logo-img" alt="ICU University Logo"></a>
 
             <div class="nav-links" id="navLinks">
                 <button class="icon" onclick="hidemenu()" aria-label="Close menu">&#10005;</button>
@@ -26,107 +39,109 @@
                     <li><a href="#course_call">Course</a></li>
                     <li><a href="fees_page.html">Fees</a></li>
                     <li><a href="Contact_page.html">Contact</a></li>
-                    <li><a href="https://www.icuzambia.net/aims/sponsorship/">Sponsorship</a></li>
+                    <li><a href="https://www.icuzambia.net/aims/sponsorship/" target="_blank" rel="noopener noreferrer">Sponsorship</a></li>
                 </ul>
-            </div> 
+            </div>
             <button class="icon" onclick="showmenu()" aria-label="Open menu">&#9776;</button>
         </nav>
-       
+
         <div class="text-box">
             <h1>INFORMATION COMMUNICATIONS UNIVERSITY</h1>
-            <p>Benefit from ICU Zambia's cutting-edge facilities and resources,<br>Explore a wide range of academic programs tailored to your interests and career aspirations.</p>
-            
+            <p>Take advantage of ICU Zambia's state-of-the-art facilities and comprehensive academic offerings.<br>Explore a wide range of academic programs tailored to your interests and career aspirations.</p>
+
             <a href="Admission_page.html" class="hero-btn">Admission Open</a>
         </div>
     </header>
 
-    <!-- Programs Offered -->
-    <section class="course" id="course_call">
-        <h2>Programs Offered</h2>
-        <p>We offer a wide range of programs in three prestigious faculties</p>
+    <main>
+        <!-- Programs Offered -->
+        <section class="course" id="course_call">
+            <h2>Programs Offered</h2>
+            <p>We offer a wide range of programs in three prestigious faculties</p>
 
-        <div class="row">
-            <div class="course-col">
-                <h3>BSC in Education</h3>
-                <p>Bachelors of Education in Business Studies.</p>
-            </div>
+            <div class="row">
+                <div class="course-col">
+                    <h3>BSC in Education</h3>
+                    <p>Bachelors of Education in Business Studies with a curriculum designed to prepare students for successful careers in education administration and business training.</p>
+                </div>
 
-            <div class="course-col">
-                <h3>BSC in Development Studies</h3>
-                <p>BSc (Bachelor of Humanities) Arts in Economics.</p>
-            </div>
+                <div class="course-col">
+                    <h3>BSC in Development Studies</h3>
+                    <p>BSc (Bachelor of Humanities) Arts in Economics focusing on sustainable development practices and economic policy analysis.</p>
+                </div>
 
-            <div class="course-col">
-                <h3>BSC ICT in Forensics</h3>
-                <p>Bachelors Degree in Information and Communications Technology in Forensics.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Campus Section -->
-    <section class="campus">
-        <h2>Our Campus</h2>
-
-        <div class="row">
-            <div class="campus-col">
-                <img src="image/Enviroment.jpeg" alt="University Environment">
-                <div class="layer">
-                    <h3>Environment</h3>
+                <div class="course-col">
+                    <h3>BSC ICT in Forensics</h3>
+                    <p>Bachelors Degree in Information and Communications Technology in Forensics, providing cutting-edge training in digital investigation techniques and cybersecurity.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="campus-col">
-                <img src="image/cletus.jpg" alt="University Community">
-                <div class="layer">
-                    <h3>Community</h3>
+        <!-- Campus Section -->
+        <section class="campus">
+            <h2>Our Campus</h2>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="image/Enviroment.jpeg" alt="Green campus environment at ICU" loading="lazy">
+                    <div class="layer">
+                        <h3>Environment</h3>
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="image/cletus.jpg" alt="Students engaging in community event at ICU" loading="lazy">
+                    <div class="layer">
+                        <h3>Community</h3>
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="image/education.jpg" alt="Educational Facilities at ICU" loading="lazy">
+                    <div class="layer">
+                        <h3>Education</h3>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="campus-col">
-                <img src="image/education.jpg" alt="Educational Facilities">
-                <div class="layer">
-                    <h3>Education</h3>
+        <!-- Facilities Section -->
+        <section class="facilities">
+            <h2>Our Facilities</h2>
+            <p>Facilities provided for Students at the University</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="image/carteen.jpg" alt="ICU Student Canteen" loading="lazy">
+                    <h3>Canteen</h3>
+                    <p>The objective of the canteen and meal service is to ensure food safety by maintaining proper sanitary conditions.</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="image/Main Hall.jpeg" alt="ICU Main Hall" loading="lazy">
+                    <h3>Main Hall</h3>
+                    <p>The University has a large indoor main hall with a professionally-deployed acoustic system and a seating capacity of about 200 people.</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="image/hostel.jpg" alt="ICU Student Hostel" loading="lazy">
+                    <h3>Hostel</h3>
+                    <p>The hostel consists of a separate mess, administrative office, and warden quarters, in addition to well-furnished rooms.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Facilities Section -->
-    <section class="facilities">
-        <h2>Our Facilities</h2>
-        <p>Facilities provided for Students at the University</p>
+        <!-- Call To Action Section -->
+        <section class="ctn">
+            <h2>THE INFORMATION AND <br> COMMUNICATIONS UNIVERSITY</h2>
+        </section>
+    </main>
 
-        <div class="row">
-            <div class="facilities-col">
-                <img src="image/carteen.jpg" alt="University Canteen">
-                <h3>Canteen</h3>
-                <p>The objective of the Canteen and meal service is to protect by reducing the risk of foodborne illness, with proper sanitary conditions.</p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="image/Main Hall.jpeg" alt="University Main Hall">
-                <h3>Main Hall</h3>
-                <p>The University has a huge indoor campus main hall with a professionally-deployed acoustic system and a seating capacity of about 200 people.</p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="image/hostel.jpg" alt="Student Hostel">
-                <h3>Hostel</h3>
-                <p>Hostel consists of a separate mess, administrative office, warden quarter. In addition to well furnished rooms.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call To Action Section -->
-    <section class="ctn">
-        <h2>THE INFORMATION AND <br> COMMUNICATIONS UNIVERSITY</h2>
-    </section>
-    
     <!-- Footer -->
     <footer class="footer">
         <h3>About Us</h3>
         <p>The Information and Communications University (ICU) is registered with the Higher Education Authority (HEA), under the Ministry of Higher Education to offer distance (e-Learning), and full-time education in Zambia.</p>
-        <p>ICU is working in collaboration with National Research University "Moscow Power Engineering Institute", Moscow, Russia in the field of scientific research, teaching innovation, teaching staff members exchange, student exchange, and joint education programs. (www.mpei.ru) ; And also working in partnership with Volgograd Pedagogical University (VSSPU) in the area of teaching staff exchange, student exchange, and language / cultural exchange programs (http://rus-center-zambia.vspu.ru/).</p>
+        <p>ICU collaborates with <a href="https://www.mpei.ru" target="_blank" rel="noopener noreferrer">National Research University "Moscow Power Engineering Institute"</a>, Moscow, Russia, in the field of scientific research, teaching innovation, staff and student exchanges, and joint education programs. ICU also partners with <a href="http://rus-center-zambia.vspu.ru/" target="_blank" rel="noopener noreferrer">Volgograd Pedagogical University (VSSPU)</a> for academic and cultural exchanges.</p>
         <p id="copyright">Made With &#10084; by Group 3 ICU</p>
     </footer>
 
