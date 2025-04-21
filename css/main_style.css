@@ -1,5 +1,10 @@
 /* Cascading Style Sheets */
 
+/* Define CSS variables for colors */
+:root {
+    --primary-bg-color: #f44336;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -282,40 +287,53 @@ h3 {
 .footer h4 {
     margin-bottom: 25px;
     margin-top: 20px;
-    font-weight: 800;
 }
 
-/* Media query for responsive */
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+   /* small tablets and mobile devices, to ensure proper responsiveness. */
 @media (max-width: 700px) {
     * {
         overflow-x: hidden;
         margin: 0;
         padding: 0;
     }
+
     #logo-img {
         padding: 10px;
     }
+
     .text-box h1 {
         font-size: 30px;
         font-weight: bold;
     }
+
     .text-box p {
         font-size: 12px;
     }
+
     .nav-links ul li {
         display: block;
     }
+
     .nav-links {
-        position: absolute;
-        background: #f44336;
+        right: -200px;
+    }
+
+    .nav-links.nav-active {
+        right: 0;
+        background: var(--primary-bg-color);
         height: 100vh;
         width: 200px;
-        top: 0%;
-        right: -200px;
+        top: 0;
         text-align: left;
         z-index: 2;
         transition: 1s;
     }
+
     .icon {
         display: block;
         color: #fff;
@@ -323,21 +341,23 @@ h3 {
         font-size: 25px;
         cursor: pointer;
     }
+
     .nav-links ul {
         padding: 30px;
     }
+
     .course-col {
         margin: 10px 10px;
     }
-    .row {
-        flex-direction: column;
-    }
+
     .course-col:hover {
         box-shadow: 3px 3px 0.5px 0.5px rgba(0, 0, 0, 0.486);
     }
+
     .facilities-col img:hover {
-        box-shadow: none;
+        box-shadow: 3.5px 5px 15px 10px rgba(0, 0, 0, 0.308);
     }
+
     .ctn h1 {
         font-size: 24px;
     }
